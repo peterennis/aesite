@@ -11,7 +11,7 @@ Install Jekyll
 ## Installation Requirements
 
 <code>
-myname@myPC /my/site
+myname@myPC /c/my/site
 
 $ ruby --version
 
@@ -81,6 +81,17 @@ Configuration file: c:/ae/aesite/_config.yml
 Configuration file: c:/my/site/mysite/_config.yml
     Server address: http://0.0.0.0:4000/
   Server running... press ctrl-c to stop.
+
+## Add to GitHub
+
+Follow the [git command line instructions](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) to add the site as a repo on GitHub.
+
+The bash console will now display
+
+`myname@myPC /c/my/site/mysite (master)`
+
+`$`
+
 
 
 
