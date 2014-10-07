@@ -10,6 +10,8 @@ Requirements:
 
 - Install Ruby Development Kit
 
+- Install RubyGems
+
 - Install Jekyll
 
 ---
@@ -47,24 +49,34 @@ $ ruby dk.rb install
 [INFO] Installing 'C:/Ruby21/lib/ruby/site_ruby/devkit.rb'
 </code>
 
+### Install Update for RubyGems
+
+<code>
+$ gem update --system
+
+...
+
+RubyGems system software updated
+</code>
+
 ### Install Jekyll
 
 <code>
 $ gem install jekyll
 
-. . .
+...
 
 Fetching: jekyll-2.4.0.gem (100%)
 
 Successfully installed jekyll-2.4.0
 
-. . .
+...
 
 Parsing documentation for jekyll-2.4.0
 
 Installing ri documentation for jekyll-2.4.0
 
-. . .
+...
 
 Done installing documentation for blankslate, celluloid, classifier-reborn, coff
 ee-script, coffee-script-source, execjs, fast-stemmer, ffi, hitimes, jekyll, jek
