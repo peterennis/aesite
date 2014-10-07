@@ -27,21 +27,21 @@ at [http://github.com/oneclick/rubyinstaller/wiki/Development-Kit](http://github
 
 Install to: `C:\RubyDK` then
 
-`$ cd /c/rubydk`
-
-`$ ruby dk.rb init`
-
 <code>
+$ cd /c/rubydk
+
+$ ruby dk.rb init
+
 [INFO] found RubyInstaller v2.1.3 at C:/Ruby21
 
 Initialization complete! Please review and modify the auto-generated 'config.yml' file to ensure it contains the root directories to all of the installed Rubies you want enhanced by the DevKit.
 </code>
 
-Bind the devkit to ruby installations in your path.
-
-`$ ruby dk.rb install`
+Bind the devkit to ruby installations in your path:
 
 <code>
+$ ruby dk.rb install
+
 [INFO] Updating convenience notice gem override for 'C:/Ruby21'
 
 [INFO] Installing 'C:/Ruby21/lib/ruby/site_ruby/devkit.rb'
@@ -52,35 +52,40 @@ Bind the devkit to ruby installations in your path.
 <code>
 $ gem install jekyll
 
-...
+. . .
 
 Fetching: jekyll-2.4.0.gem (100%)
 
 Successfully installed jekyll-2.4.0
 
-...
+. . .
 
 Parsing documentation for jekyll-2.4.0
 
 Installing ri documentation for jekyll-2.4.0
 
-...
+. . .
 
 Done installing documentation for blankslate, celluloid, classifier-reborn, coff
 ee-script, coffee-script-source, execjs, fast-stemmer, ffi, hitimes, jekyll, jek
 yll-coffeescript, jekyll-gist, jekyll-paginate, jekyll-sass-converter, jekyll-wa
 tch, listen, parslet, posix-spawn, pygments.rb, rb-fsevent, rb-inotify, redcarpe
 t, sass, timers, toml, yajl-ruby after 68 seconds
+
 26 gems installed
+</code>
 
 ## Verify Installation
+
+Here
 
 ### Bash
 
 <code>
-myname@myPC /c/my/site
+myname@ myPC /c/my/site
 
 $ bash
+
 bash-3.1$
 
 GNU bash, version 3.1.20(4)-release (i686-pc-msys)
@@ -102,9 +107,9 @@ git version 1.9.4.msysgit.2
 
 ### Jekyll 
 
+<code>
 $ gem query jekyll
 
-<code>
 \*\*\* LOCAL GEMS \*\*\*
 
 jekyll (2.4.0)
@@ -142,30 +147,47 @@ If there is an error related to [liquid-exception](http://stackoverflow.com/ques
 
 Success will show this output:
 
+<code>
 Configuration file: c:/my/site/mysite/_config.yml
-            Source: c:/my/site/mysite
-       Destination: c:/my/site/mysite/_site
-      Generating...
-                    done.
-  Please add the following to your Gemfile to avoid polling for changes:
-    require 'rbconfig'
-    if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
-      gem 'wdm', '>= 0.1.0'
-    end
- Auto-regeneration: enabled for 'c:/my/site/mysite'
+
+Source: c:/my/site/mysite
+
+Destination: c:/my/site/mysite/_site
+
+Generating...
+
+done.
+
+Please add the following to your Gemfile to avoid polling for changes:
+
+require 'rbconfig'
+
+if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
+
+gem 'wdm', '>= 0.1.0'
+
+end
+
+Auto-regeneration: enabled for 'c:/my/site/mysite'
+
 Configuration file: c:/my/site/mysite/_config.yml
-    Server address: http://0.0.0.0:4000/
-  Server running... press ctrl-c to stop.
+
+Server address: http://0.0.0.0:4000/
+
+Server running... press ctrl-c to stop.
+</code>
 
 ## Add Site to GitHub
 
 Follow the [git command line instructions](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) to add the site as a repo on GitHub.
 
-The bash console will now display
+The bash console will now display:
 
-`myname@myPC /c/my/site/mysite (master)`
+<code>
+myname@myPC /c/my/site/mysite (master)
 
-`$`
+$
+</code>
 
 
 
