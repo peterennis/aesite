@@ -201,6 +201,10 @@ myname@myPC /c/my/site/mysite (master)
 $
 </code>
 
+# Configuration
+
+Edit the file `_config.yml` to required settings for the site configuration, such as timezone. Detailed information is provided [here](http://jekyllrb.com/docs/configuration/) for available options.
+
 
 
 
