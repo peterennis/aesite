@@ -205,7 +205,46 @@ $
 
 Edit the file `_config.yml` to required settings for the site configuration, such as timezone. Detailed information is provided [here](http://jekyllrb.com/docs/configuration/) for available options.
 
+## Install Rouge
 
+<code>
+$ gem install rouge
+Fetching: rouge-1.7.2.gem (100%)
+Successfully installed rouge-1.7.2
+Parsing documentation for rouge-1.7.2
+Installing ri documentation for rouge-1.7.2
+Done installing documentation for rouge after 14 seconds
+1 gem installed
+</code>
+
+Add `highlighter: rouge` in `_config.yml` file to resolve the following error:
+
+  Liquid Exception: cannot load such file -- yajl/2.1/yajl in _posts/2014-10-08-
+welcome-to-jekyll.markdown
+
+## Restarting Jekyll
+
+<code>
+$ jekyll serve --watch
+Configuration file: c:/ae/aeblog/_config.yml
+            Source: c:/ae/aeblog
+       Destination: c:/ae/aeblog/_site
+      Generating...
+                    done.
+  Please add the following to your Gemfile to avoid polling for changes:
+    require 'rbconfig'
+    if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
+      gem 'wdm', '>= 0.1.0'
+    end
+ Auto-regeneration: enabled for 'c:/ae/aeblog'
+Configuration file: c:/ae/aeblog/_config.yml
+    Server address: http://0.0.0.0:4000/
+  Server running... press ctrl-c to stop.
+</code>
+
+If `_config.yml` is then changed, kill the session and restart to see the changes,
+otherwise hours can be lost in pointless debugging around the question "Why is this
+#%$!@!! server not showing my site name... ???"
 
 
 
