@@ -7,8 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://adaept.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  peterennis
-highlighter: rouge
 timezone: America/Los_Angeles
 
 # Build settings
 markdown: kramdown
+highlighter: rouge

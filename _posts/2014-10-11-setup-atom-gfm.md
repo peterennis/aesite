@@ -75,6 +75,8 @@ puts markdown.to_html
 
 > The overriding design goal for [Markdown’s formatting syntax](http://daringfireball.net/projects/markdown/) is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.
 
+GitHub issues and pull requests with task list items defined will summarize the task list on the pull request listing and any cross reference.
+
 Support for [Task Lists](https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments) is available:
 
 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> are supported
@@ -82,6 +84,25 @@ Support for [Task Lists](https://github.com/blog/1375%0A-task-lists-in-gfm-issue
 - [x] this is a complete item
 - [ ] this is an incomplete item
 
+**Nested Task List**
+
+- [ ] a bigger project
+  - [ ] first subtask #1234
+  - [ ] follow up subtask #4321
+  - [ ] final subtask cc @mention
+- [ ] a separate task
+
+### References
+
+Certain [references](https://help.github.com/articles/writing-on-github/#references) are auto-linked:
+
+* SHA: a5c3785ed8d6a35868bc169f07e40e889087fd2e
+* User@SHA: jlord@a5c3785ed8d6a35868bc169f07e40e889087fd2e
+* User/Repository@SHA: jlord/sheetsee.js@a5c3785ed8d6a35868bc169f07e40e889087fd2e
+* #Num: #26
+* GH-Num: GH-26
+* User#Num: jlord#26
+* User/Repository#Num: jlord/sheetsee.js#26
 
 ### HTML
 
