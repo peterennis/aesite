@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to my hydeaway..."
 date:   2014-10-08 19:52:45
-categories: hyde update
+categories: articles
 ---
 # Hyde Away
 
@@ -252,6 +252,14 @@ If `_config.yml` is then changed, kill the session and restart to see the change
 otherwise hours can be lost in pointless debugging around the question "Why is this
 #%$!@!! server not showing my site name... ???"
 
+Yajl Badjl
+
+From [Here](https://github.com/brianmario/yajl-ruby/issues/116):
+
+- gem uninstall yajl-ruby 
+Ensure all the versions (ruby and x86-mingw32 are uninstalled)
+- gem install yajl-ruby --platform=ruby 
+- bundle check 
 
 
 

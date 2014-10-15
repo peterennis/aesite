@@ -80,13 +80,13 @@ HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a a
 
 Syntax highlighting via Pygments
 
-{% highlight css linenos=table %}
+```
 #container {
 	float: left;  
 	margin: 0 -240px 0 0;  
 	width: 100%;
 }
-{% endhighlight %}
+```
 
 Non Pygments code example
 
@@ -98,9 +98,9 @@ Non Pygments code example
 
 Make any link standout more when applying the `.btn` class.
 
-{% highlight html %}
+```
 <a href="#" class="btn">Default Button</a>
-{% endhighlight %}
+```
 
 <a href="#" class="btn">.btn</a>
 <a href="#" class="btn-inverse">.btn-inverse</a>
